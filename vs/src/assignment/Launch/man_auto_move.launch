@@ -1,0 +1,11 @@
+<launch>
+
+    <include file="$(find vs)/src/assignment/Launch/move.launch"/>
+
+    <param name="x_goal" value = "7.0"/>
+    <param name="y_goal" value = "3.0"/>
+     
+
+    <node pkg="vs" type="final.py" name="control_node" output = "screen" />
+
+</launch>
